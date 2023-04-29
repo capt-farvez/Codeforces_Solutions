@@ -51,11 +51,11 @@ void solve(){
     ll mx=-1, indx=-1;
     for(ll i=0; i<n; i++){
         if((a[i]+i)<=t && mx<b[i]){
-            ans=b[i];
+            mx=b[i];
             indx=i+1;
         }
     }
-    cout<<indx<<endl;
+    cout<<indx<<endl; 
 }
 
 int main()

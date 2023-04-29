@@ -14,6 +14,7 @@
 #define NO cout << "NO\n"
 #define Yes cout << "Yes\n"
 #define No cout << "No\n"
+#define lp(n) for(ll i=0; i<n; i++)
 using namespace std;
 
 bool is_prime(ll n)
@@ -38,24 +39,11 @@ ll digits_sum(ll n)
     return sum;
 }
 
-void solve(){   
-    ll n,t;
-    cin>>n>>t;
-    ll a[n], b[n];
-    for(ll i=0; i<n; i++){
-        cin>>a[i];
-    }
-    for(ll i=0; i<n; i++){
-        cin>>b[i];
-    }
-    ll mx=-1, indx=-1;
-    for(ll i=0; i<n; i++){
-        if((a[i]+i)<=t && mx<b[i]){
-            ans=b[i];
-            indx=i+1;
-        }
-    }
-    cout<<indx<<endl;
+void solve(){ 
+    ll n,m;  
+    cin>>n>>m;
+    ll x=ceil((n*m)/2.0);
+    cout<<x<<endl;
 }
 
 int main()
